@@ -15,9 +15,19 @@ var getTriangleType = function(a, b, c) {
         return "NOT TRIANGLE";
     }
 }
-
-
+/*
 console.log(getTriangleType(11, 1, 1));
 console.log(getTriangleType(11, 9, 3));
 console.log(getTriangleType(4, 2, 4));
 console.log(getTriangleType(8, 8, 8));
+*/
+console.log(getTriangleType(8, 8, 8));
+
+var alphabet = "abcdefghijklmnopqrstuvwxyz";
+console.log(alphabet.indexOf('f'));
+for(let letter of alphabet){
+    console.log(letter);
+}
+
+
+
