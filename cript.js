@@ -28,7 +28,7 @@ function decript(sentence) {
 //console.log(decript(criptSentence));
 
 
-function caesar(sentence, shift){
+/*function caesar(sentence, shift){
     var response = '';
     for(var letter of sentence) {
         var index = alphabeta.indexOf(letter);
@@ -45,4 +45,29 @@ function caesar(sentence, shift){
 var x = caesar('caio', 50);
 console.log("x:", x);
 var y = caesar(x, -50);
-console.log("y:", y);
+console.log("y:", y);*/
+ 
+
+function machineCoin (value) {
+    var coinSize = {
+        "500":0,
+        "200":0,
+        "100":0,
+        "50":0,
+        "20":0,
+        "10":0,
+        "5":0,
+        "2":0,
+        "1":0,
+    }
+    for (var key of Object.keys(coinSize).reverse()) {
+        while (value >= parseInt(key)){
+            coinSize[key]++;
+            value -= parseInt(key);
+        }
+    }
+    return coinSize;
+}
+console.log(machineCoin(67));
+
+
